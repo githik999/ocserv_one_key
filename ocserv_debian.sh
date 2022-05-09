@@ -3,7 +3,9 @@ apt upgrade -y
 apt install iptables -y
 apt install ocserv -y
 
-curl -O /ect/ocserv https://raw.githubusercontent.com/githik999/ocserv_one_key/main/ocserv.conf
+curl -O https://raw.githubusercontent.com/githik999/ocserv_one_key/main/ocserv.conf
+mv ocserv.conf /ect/ocserv/
+
 curl -JLO "https://dl.filippo.io/mkcert/latest?for=linux/amd64"
 chmod +x mkcert-v*-linux-amd64
 sudo cp mkcert-v*-linux-amd64 /usr/local/bin/mkcert
